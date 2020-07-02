@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Ahmed Khadraoui</string>
+
+    <string name="hint_genre"> Genre </string>
+    <string name="hint_male"> Male </string>
+    <string name="hint_female"> Female </string>
+    <string name="hint_nom"> Nom :</string>
+    <string name="hint_prenom"> Prenom :</string>
+    <string name="hint_telephone"> Telephone :</string>
+    <string name="hint_email"> Email :</string>
+    <string name="hint_etablissement"> Etablissement :</string>
+    <string name="hint_mdp"> Mot de passe :</string>
+    <string name="hint_confirmer_mdp"> Confirmer mot de passe :</string>
+    <string name="hint_valider"> valdider</string>
+
+</resources>

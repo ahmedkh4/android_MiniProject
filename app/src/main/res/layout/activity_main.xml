@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:hint="@string/hint_genre"
+     android:textSize="20sp"
+     android:textStyle="bold" />
+
+
+ <RadioGroup
+     android:id="@+id/radioGroup"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginBottom="20dp"
+     android:layout_gravity="center"
+     android:orientation="horizontal">
+
+      <RadioButton
+          android:id="@+id/maleRadio"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginEnd="20dp"
+          android:text="@string/hint_male" />
+
+      <RadioButton
+          android:id="@+id/femaleRadio"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/hint_female" />
+
+ </RadioGroup>
+
+
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/nom"
+       android:hint="@string/hint_nom"
+       android:padding="15dp"
+       android:paddingBottom="20dp"
+       android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/prenom"
+        android:hint="@string/hint_prenom"
+        android:padding="15dp"
+        android:paddingBottom="20dp"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/telephone"
+        android:hint="@string/hint_telephone"
+        android:padding="15dp"
+        android:paddingBottom="20dp"
+        android:inputType="number" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:hint="@string/hint_email"
+        android:padding="15dp"
+        android:paddingBottom="20dp"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etablissement"
+        android:hint="@string/hint_etablissement"
+        android:padding="15dp"
+        android:paddingBottom="20dp"
+        android:inputType="textPersonName" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mdp"
+        android:hint="@string/hint_mdp"
+        android:padding="15dp"
+        android:paddingBottom="20dp"
+        android:inputType="textPassword" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cmdp"
+        android:hint="@string/hint_confirmer_mdp"
+        android:padding="15dp"
+        android:paddingBottom="20dp"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:hint="@string/hint_valider" />
+
+
+
+</LinearLayout>
