@@ -2,10 +2,21 @@ package com.khadraoui.Ahmed;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-public class ProfilActivity extends AppCompatActivity {
+public class ProfilActivity extends AppCompatActivity implements View.OnClickListener {
+
+    Animation frontAnim ;
+    ImageView image ;
+    MediaPlayer back ;
+
 
     private Boolean mIsMale ;
     private String mNom;
@@ -21,6 +32,11 @@ public class ProfilActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profil);
+
+        //set animation
+        frontAnim = AnimationUtils.loadAnimation(this, R.anim.front_anime) ;
+        // hooks
+        image = findViewById(R.id.avatar) ;
 
         mIsMale = getIntent().getBooleanExtra("genderExtra", false);
         mNom = getIntent().getStringExtra("Fname");
@@ -49,7 +65,24 @@ public class ProfilActivity extends AppCompatActivity {
         genreTextView.setText(String.valueOf( mgender) );
 
 
+// button
+        findViewById(R.id.back).setOnClickListener(this);
+
+    }
+
+    @Override
+    public void onClick(View v) {
+        if( v.getId() == R.id.back)
+            back = MediaPlayer.create(this , R.raw.back);
+           back.start();
+            back() ;
+    }
 
 
+
+    void back() {
+        Intent i = new Intent(ProfilActivity.this , MainActivity.class) ;
+        startActivity(i);
+        finish();
     }
 }

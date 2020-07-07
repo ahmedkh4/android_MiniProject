@@ -10,42 +10,139 @@
     android:padding="20dp"
     tools:context=".ProfilActivity">
 
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"   >
+
+<Button
+    android:id="@+id/back"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:background="@drawable/back" />
+
+ </LinearLayout>
 
 
-<TextView
-    android:id="@+id/nom"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:hint="@string/hint_nom"
-    android:padding="20dp" />
+   <RelativeLayout
 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" >
 
-    <TextView
-        android:id="@+id/prenom"
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:src="@drawable/avatar" />
+
+</RelativeLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_prenom"
-        android:padding="20dp" />
+        android:orientation="horizontal"
+        android:padding="20dp" >
 
-    <TextView
-        android:id="@+id/telephone"
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_nom"  />
+
+        <TextView
+            android:id="@+id/nom"
+            android:paddingStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+//
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_telephone"
-        android:padding="20dp" />
+        android:orientation="horizontal"
+        android:padding="20dp" >
 
-    <TextView
-        android:id="@+id/etablissement"
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_prenom"  />
+
+        <TextView
+            android:id="@+id/prenom"
+            android:paddingStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_etablissement"
-        android:padding="20dp" />
+        android:orientation="horizontal"
+        android:padding="20dp" >
 
-    <TextView
-        android:id="@+id/genre"
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_telephone"  />
+
+        <TextView
+            android:id="@+id/telephone"
+            android:paddingStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  />
+
+    </LinearLayout>
+
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/hint_genre"
-        android:padding="20dp" />
+        android:orientation="horizontal"
+        android:padding="20dp" >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_etablissement"  />
+
+        <TextView
+            android:id="@+id/etablissement"
+            android:paddingStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp" >
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_genre"  />
+
+        <TextView
+            android:id="@+id/genre"
+            android:paddingStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
